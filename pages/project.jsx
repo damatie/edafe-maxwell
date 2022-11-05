@@ -17,7 +17,7 @@ const Project = ({ pinnedItems }) => {
      {
     name: 'Syncbit',
     stargazerCount: '100',
-    description: 'A complete commerce platform that will allow merchants start, grow, and manage a business.',
+    description: 'A timesheet management application used in the Oil & Gas industy for streamlining payroll',
     url: 'https://syncbit.io/',
     status: 'Live',
     stack:'Nextjs-React-Tailwind-Redux-Mui-React hooks-Rest-typeScript'
@@ -25,7 +25,7 @@ const Project = ({ pinnedItems }) => {
      {
     name: 'BitMARte',
     stargazerCount: '100',
-    description: 'A timesheet management application used in the Oil & Gas industy for streamlining payroll',
+    description: 'A complete commerce platform that will allow merchants start, grow, and manage a business.',
     url: 'https://bitmarte-frontend-2b4ikm7or-dev-cbit.vercel.app/',
     status: 'Ongoing',
     stack:'Nextjs-React-Tailwind-Redux-Mui-cloudinary-React hooks-Rest-typeScript-AWS'
