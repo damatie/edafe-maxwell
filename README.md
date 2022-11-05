@@ -14,24 +14,17 @@ Personal Portfolio build using Next js, Three js, and Framer Motion
 ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
 ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
 
-## Live Preview
-
-[Demo](https://nextjs-portfolio-kasim393.vercel.app/)
-
 ## Build Setup
 
-```bash
-# clone project
-$ git clone https://github.com/kasim393/Nextjs-Portfolio.git
-
 # install dependencies
+
 $ npm install
 
 # serve with host at localhost:3000
-$ npm run dev
-```
 
-# Screenshot
+$ npm run dev
+
+```
 
 !["Portfolio Website"](https://raw.githubusercontent.com/kasim393/assets/main/nextjs-portfolio/ss1.png)
 
@@ -44,3 +37,4 @@ $ npm run dev
     Google font: https://fonts.google.com/
 
     Design : https://dribbble.com/shots/17254830-Portfolio-Concept
+```
