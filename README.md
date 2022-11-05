@@ -1,7 +1,3 @@
-<div align="center">
-      <h1> <img src="https://raw.githubusercontent.com/kasim393/assets/main/nextjs-portfolio/ss4.png" width="500px"><br/>Personal Portfolio</h1>
-     </div>
-
 # Description
 
 Personal Portfolio build using Next js, Three js, and Framer Motion
@@ -25,12 +21,6 @@ $ npm install
 $ npm run dev
 
 ```
-
-!["Portfolio Website"](https://raw.githubusercontent.com/kasim393/assets/main/nextjs-portfolio/ss1.png)
-
-!["Portfolio Website"](https://raw.githubusercontent.com/kasim393/assets/main/nextjs-portfolio/ss2.png)
-
-!["Portfolio Website"](https://raw.githubusercontent.com/kasim393/assets/main/nextjs-portfolio/ss3.png)
 
 # Resource
 
