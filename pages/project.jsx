@@ -34,7 +34,7 @@ const Project = ({ pinnedItems }) => {
     name: 'Crusifix Games',
     stargazerCount: '100',
     description: 'Crusifix Games application is a minimal and responsive web application created to host contests with an intuitive leadership board & point ranking system. Customers can also book and pay for games',
-    url: 'https://bitmarte-frontend-2b4ikm7or-dev-cbit.vercel.app/',
+    url: 'https://crusifix.vercel.app/',
     status: 'Live',
     stack:'Nextjs-React-Tailwind-Redux-React hooks-Rest-typeScript'
     },
