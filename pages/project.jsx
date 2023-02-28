@@ -6,6 +6,14 @@ import { motion } from "framer-motion";
 const Project = ({ pinnedItems }) => {
 
   const projects = [
+    {
+    name: 'Mintyn',
+    stargazerCount: '100',
+    description: 'MINTYN MOBILE AND ONLINE BANKING',
+    url: 'https://mintyn.com/',
+    status: 'Live',
+    stack:'React-Redux-Bootstrap-React hooks-Rest-chartjs-Formik,-SCSS'
+    },
    {
     name: 'Kusnap',
     stargazerCount: '100',
