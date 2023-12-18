@@ -44,7 +44,7 @@ const Project = ({ pinnedItems }) => {
     description: 'A marketplace for sellers and buyers',
     url: 'https://kusnap.com/',
     status: 'Live',
-    stack:'Nextjs-React-Redux-Bootstrap-Cloudinary-React hooks-Rest-charts
+    stack:'Nextjs-React-Redux-Bootstrap-Cloudinary-React hooks-Rest-charts'
     },
      {
     name: 'Syncbit',
