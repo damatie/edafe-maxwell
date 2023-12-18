@@ -9,10 +9,10 @@ const Project = ({ pinnedItems }) => {
      {
     name: 'My Event Pod',
     stargazerCount: '100',
-    description: 'The smart digital event planner for event pros, venues, vendors, organizers to collaborate and plan any successful event all-in-one place.',
+    description: 'The smart digital event planner for event pros, venues, vendors, and organizers to collaborate and plan any successful event all in one place.',
     url: 'https://www.myeventpod.com/',
     status: 'Live',
-    stack:'React-Redux-Tailwind-NextJS-React hooks-Rest-chartjs-Formik'
+    stack:'React-Redux-Tailwind-NextJS-React hooks-Rest-charts-Formik'
     },
      {
     name: 'Presmit',
@@ -26,9 +26,9 @@ const Project = ({ pinnedItems }) => {
     name: 'Profitall',
     stargazerCount: '100',
     description: 'A digital commerce platform for a profitable business',
-    url: 'https://www.profitall.co.uk/,
+    url: 'https://www.profitall.co.uk/',
     status: 'Live',
-    stack:'React-Redux-Tailwind-Chatbot--Webpack-cloudinary-React hooks-Rest-chartjs-Formik-SCSS'
+    stack:'React-Redux-Tailwind-Chatbot--Webpack-Cloudinary-React hooks-Rest-charts-Formik-SCSS'
     },
     {
     name: 'Mintyn',
@@ -36,20 +36,20 @@ const Project = ({ pinnedItems }) => {
     description: 'MINTYN MOBILE AND ONLINE BANKING',
     url: 'https://mintyn.com/',
     status: 'Live',
-    stack:'React-Redux-Bootstrap-React hooks-Rest-chartjs-Formik,-SCSS'
+    stack:'React-Redux-Bootstrap-React hooks-Rest-charts-Formik,-SCSS'
     },
    {
     name: 'Kusnap',
     stargazerCount: '100',
-    description: 'A market place for sellers and buyers',
+    description: 'A marketplace for sellers and buyers',
     url: 'https://kusnap.com/',
     status: 'Live',
-    stack:'Nextjs-React-Redux-Bootstrap-cloudinary-React hooks-Rest-chartjs'
+    stack:'Nextjs-React-Redux-Bootstrap-Cloudinary-React hooks-Rest-charts
     },
      {
     name: 'Syncbit',
     stargazerCount: '100',
-    description: 'A timesheet management application used in the Oil & Gas industy for streamlining payroll',
+    description: 'A timesheet management application used in the Oil & Gas industry for streamlining payroll',
     url: 'https://syncbit.io/',
     status: 'Live',
     stack:'Nextjs-React-Tailwind-Redux-Mui-React hooks-Rest-typeScript'
@@ -57,15 +57,15 @@ const Project = ({ pinnedItems }) => {
      {
     name: 'BitMARte',
     stargazerCount: '100',
-    description: 'A complete commerce platform that will allow merchants start, grow, and manage a business.',
-    url: 'https://bitmarte-frontend-2b4ikm7or-dev-cbit.vercel.app/',
-    status: 'Ongoing',
-    stack:'Nextjs-React-Tailwind-Redux-Mui-cloudinary-React hooks-Rest-typeScript-AWS'
+    description: 'A complete commerce platform that will allow merchants to start, grow, and manage a business.',
+    url: 'https://www.bitmarte.com/',
+    status: 'Live',
+    stack:'Nextjs-React-Tailwind-Redux-Mui-Cloudinary-React hooks-Rest-typeScript-AWS'
     },
     {
     name: 'Crusifix Games',
     stargazerCount: '100',
-    description: 'Crusifix Games application is a minimal and responsive web application created to host contests with an intuitive leadership board & point ranking system. Customers can also book and pay for games',
+    description: 'The Crucifix Games application is a minimal and responsive web application created to host contests with an intuitive leadership board & point ranking system. Customers can also book and pay for games',
     url: 'https://crusifix.vercel.app/',
     status: 'Live',
     stack:'Nextjs-React-Tailwind-Redux-React hooks-Rest-typeScript'
@@ -73,7 +73,7 @@ const Project = ({ pinnedItems }) => {
      {
     name: 'Muxt',
     stargazerCount: '100',
-    description: 'A digital ad space with tools that drives your business',
+    description: 'A digital ad space with tools that drive your business',
     url: 'https://muxt.net',
     status: 'Ongoing',
      stack:'Nextjs-React-Tailwind-Redux-Formik-Jest-Rechart-Firebase-React hooks'
