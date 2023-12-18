@@ -6,6 +6,30 @@ import { motion } from "framer-motion";
 const Project = ({ pinnedItems }) => {
 
   const projects = [
+     {
+    name: 'My Event Pod',
+    stargazerCount: '100',
+    description: 'The smart digital event planner for event pros, venues, vendors, organizers to collaborate and plan any successful event all-in-one place.',
+    url: 'https://www.myeventpod.com/',
+    status: 'Live',
+    stack:'React-Redux-Tailwind-NextJS-React hooks-Rest-chartjs-Formik'
+    },
+     {
+    name: 'Presmit',
+    stargazerCount: '100',
+    description: 'Best Digital Trading Platform In Africa',
+    url: 'https://prestmit.com/',
+    status: 'Live',
+    stack:'React-Redux-Tailwind-PWA-Chatbot-Webpack-NextJs-Crypto-React hooks-RestAPI-Formik-CSS'
+    },
+     {
+    name: 'Profitall',
+    stargazerCount: '100',
+    description: 'A digital commerce platform for a profitable business',
+    url: 'https://www.profitall.co.uk/,
+    status: 'Live',
+    stack:'React-Redux-Tailwind-Chatbot--Webpack-cloudinary-React hooks-Rest-chartjs-Formik-SCSS'
+    },
     {
     name: 'Mintyn',
     stargazerCount: '100',
