@@ -36,7 +36,7 @@ const Project = ({ pinnedItems }) => {
     description: 'MINTYN MOBILE AND ONLINE BANKING',
     url: 'https://mintyn.com/',
     status: 'Live',
-    stack:'React-Redux-Bootstrap-React hooks-Rest-charts-Formik,-SCSS'
+    stack:'React-Redux-Bootstrap-React hooks-Rest-charts-Formik-SCSS'
     },
    {
     name: 'Kusnap',
