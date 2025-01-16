@@ -7,10 +7,13 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 const About = () => {
-  const [showReact, setShowReact] = useState(true);
-  const [showNext, setShowNext] = useState(false);
-  const [showHtml, setShowHtml] = useState(false);
-  const [showLibrary, setShowLibrary] = useState(false);
+  const [showFrontend, setShowFrontend] = useState(true);
+  const [showBackend, setShowBackend] = useState(false);
+  const [showStyling, setShowStyling] = useState(false);
+  const [showTesting, setShowTesting] = useState(false);
+  const [showDatabase, setShowDatabase] = useState(false);
+  const [showAdditionalTech, setShowAdditionalTech] = useState(false);
+  const [showMethodologies, setShowMethodologies] = useState(false);
   const [showFree, setShowFree] = useState(false);
   const [showMenu, setShowMenu] = useState(true);
   return (
@@ -102,11 +105,33 @@ const About = () => {
         >
           <span className={style.ml_2}> /**</span>
           <span style={{ fontWeight: "bold" }}>* About me</span>
-          <span>* Creative and progress-focused Front-End Developer</span>
-          <span>* with 5 years of experience and proven ability of building efficient</span>
-          <span>* front end user interfaces in line with modern best practices.</span>
-          <span>* Proficient in HTML, CSS, JavaScript,TypeScript, React, React hooks, </span>
-          <span>* Redux, and Nextjs plus modern libraries and frameworks.</span>
+          <span>
+            * Detail-oriented and innovative Senior Front-End Developer
+          </span>
+          <span>
+            * with over 5 years of experience designing and building scalable,
+            high-performing
+          </span>
+          <span>
+            * user interfaces aligned with modern best practices and business
+            goals.
+          </span>
+          <span>
+            * Proficient in HTML, CSS, JavaScript, TypeScript, React, React
+            Hooks,
+          </span>
+          <span>
+            * Redux, Next.js, and modern libraries/frameworks for creating
+            exceptional user experiences.
+          </span>
+          <span>
+            * Skilled in responsive design, performance optimization, and
+            cross-functional collaboration
+          </span>
+          <span>
+            * to deliver solutions that drive results and add value to
+            stakeholders.
+          </span>
 
           <span className={style.ml_2}>*/</span>
         </motion.div>
@@ -140,19 +165,19 @@ const About = () => {
               <span style={{ marginLeft: "5px" }}>STACK & SKILLS</span>
               <div className={style.skill}>
                 <div
-                  onClick={(e) => setShowReact(!showReact)}
+                  onClick={(e) => setShowFrontend(!showFrontend)}
                   className={style.dropdownSkill}
                 >
                   <span>
-                    {showReact ? <FiChevronDown /> : <FiChevronRight />}
+                    {showFrontend ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
                   <span style={{ color: "rgb(235,203,139)" }}>
                     <BsFolderFill />
                   </span>
-                  <span>Js Frameworks</span>
+                  <span>Frontend</span>
                 </div>
                 <AnimatePresence>
-                  {showReact && (
+                  {showFrontend && (
                     <motion.div
                       className={style.showSkill}
                       initial="hidden"
@@ -184,50 +209,100 @@ const About = () => {
                       }}
                     >
                       <p>
-                        <BsMarkdownFill /> reactjs.md
+                        <BsMarkdownFill /> React.js
                       </p>
                       <p>
-                        <BsMarkdownFill /> nextjs.md
+                        <BsMarkdownFill /> Next.js
                       </p>
                       <p>
-                        <BsMarkdownFill /> vuejs.md
+                        <BsMarkdownFill />
+                        TypeScript
                       </p>
                       <p>
-                        <BsMarkdownFill /> vuex.md
-                      </p>
-                       <p>
-                        <BsMarkdownFill /> react native.md
+                        <BsMarkdownFill /> JavaScript (ES6+)
                       </p>
                       <p>
-                        <BsMarkdownFill /> nuxtjs.md
+                        <BsMarkdownFill /> Redux
                       </p>
-                      <p>
-                        <BsMarkdownFill /> redux.md
-                      </p>
-                      <p>
-                        <BsMarkdownFill /> test.md
-                      </p>
-                     
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
-              
+
               <div className={style.skill}>
                 <div
-                  onClick={(e) => setShowLibrary(!showLibrary)}
+                  onClick={(e) => setShowBackend(!showBackend)}
                   className={style.dropdownSkill}
                 >
                   <span>
-                    {showLibrary ? <FiChevronDown /> : <FiChevronRight />}
+                    {showBackend ? <FiChevronDown /> : <FiChevronRight />}
+                  </span>
+                  <span style={{ color: "rgb(128, 128, 128)" }}>
+                    <BsFolderFill />
+                  </span>
+                  <span>Backend Knowledge</span>
+                </div>
+                <AnimatePresence>
+                  {showBackend && (
+                    <motion.div
+                      className={style.showSkill}
+                      initial="hidden"
+                      animate="visible"
+                      exit="go"
+                      variants={{
+                        hidden: {
+                          y: "-20px",
+                          opacity: 0,
+                        },
+                        visible: {
+                          y: "0",
+                          opacity: 1,
+                          transition: {
+                            type: "spring",
+                            delay: 0.2,
+                            duration: 0.5,
+                          },
+                        },
+                        go: {
+                          y: "-20px",
+                          opacity: 0,
+                          transition: {
+                            type: "spring",
+                            delay: 0.2,
+                            duration: 0.3,
+                          },
+                        },
+                      }}
+                    >
+                      <p>
+                        <BsMarkdownFill /> Python
+                      </p>
+                      <p>
+                        <BsMarkdownFill /> RESTful API
+                      </p>
+                      <p>
+                        <BsMarkdownFill /> GraphQL
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              <div className={style.skill}>
+                <div
+                  onClick={(e) => setShowStyling(!showStyling)}
+                  className={style.dropdownSkill}
+                >
+                  <span>
+                    {showStyling ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
                   <span style={{ color: "rgb(191,97,106)" }}>
                     <BsFolderFill />
                   </span>
-                  <span>UI Library</span>
+                  <span>Styling & UI</span>
                 </div>
                 <AnimatePresence>
-                  {showLibrary && (
+                  {showStyling && (
                     <motion.div
                       className={style.showSkill}
                       initial="hidden"
@@ -259,16 +334,25 @@ const About = () => {
                       }}
                     >
                       <p>
-                        <BsMarkdownFill /> material ui.md
+                        <BsMarkdownFill /> CSS3
                       </p>
                       <p>
-                        <BsMarkdownFill /> bootstrap.md
+                        <BsMarkdownFill /> HTML5
                       </p>
                       <p>
-                        <BsMarkdownFill /> tailwind css.md
+                        <BsMarkdownFill /> Tailwind
                       </p>
                       <p>
-                        <BsMarkdownFill /> framer motion.md
+                        <BsMarkdownFill /> Material UI
+                      </p>
+                      <p>
+                        <BsMarkdownFill /> Styled Components
+                      </p>
+                      <p>
+                        <BsMarkdownFill /> Storybook
+                      </p>
+                      <p>
+                        <BsMarkdownFill /> Figma
                       </p>
                     </motion.div>
                   )}
@@ -276,19 +360,19 @@ const About = () => {
               </div>
               <div className={style.skill}>
                 <div
-                  onClick={(e) => setShowHtml(!showHtml)}
+                  onClick={(e) => setShowTesting(!showTesting)}
                   className={style.dropdownSkill}
                 >
                   <span>
-                    {showHtml ? <FiChevronDown /> : <FiChevronRight />}
+                    {showTesting ? <FiChevronDown /> : <FiChevronRight />}
                   </span>
                   <span style={{ color: "rgb(163,190,140)" }}>
                     <BsFolderFill />
                   </span>
-                  <span> Html, CSS & Js</span>
+                  <span> Testing & CI/CD</span>
                 </div>
                 <AnimatePresence>
-                  {showHtml && (
+                  {showTesting && (
                     <motion.div
                       className={style.showSkill}
                       initial="hidden"
@@ -320,28 +404,207 @@ const About = () => {
                       }}
                     >
                       <p>
-                        <BsMarkdownFill /> html5.md
-                      </p>
-                       <p>
-                        <BsMarkdownFill /> css3.md
+                        <BsMarkdownFill /> Cypress
                       </p>
                       <p>
-                        <BsMarkdownFill /> responsive website.md
+                        <BsMarkdownFill /> Jest
                       </p>
                       <p>
-                        <BsMarkdownFill /> grid flexbox.md
+                        <BsMarkdownFill /> Git
                       </p>
                       <p>
-                        <BsMarkdownFill /> javaScript Es6.md
+                        <BsMarkdownFill /> Netlify
                       </p>
                       <p>
-                        <BsMarkdownFill /> typeScript.md
+                        <BsMarkdownFill /> Vercel
                       </p>
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
-              
+
+              <div className={style.skill}>
+                <div
+                  onClick={(e) => setShowDatabase(!showDatabase)}
+                  className={style.dropdownSkill}
+                >
+                  <span>
+                    {showDatabase ? <FiChevronDown /> : <FiChevronRight />}
+                  </span>
+                  <span style={{ color: "rgb(0, 0, 255)" }}>
+                    <BsFolderFill />
+                  </span>
+                  <span> Database Expertise</span>
+                </div>
+                <AnimatePresence>
+                  {showDatabase && (
+                    <motion.div
+                      className={style.showSkill}
+                      initial="hidden"
+                      animate="visible"
+                      exit="go"
+                      variants={{
+                        hidden: {
+                          y: "-20px",
+                          opacity: 0,
+                        },
+                        visible: {
+                          y: "0",
+                          opacity: 1,
+                          transition: {
+                            type: "spring",
+                            delay: 0.2,
+                            duration: 0.5,
+                          },
+                        },
+                        go: {
+                          y: "-20px",
+                          opacity: 0,
+                          transition: {
+                            type: "spring",
+                            delay: 0.2,
+                            duration: 0.3,
+                          },
+                        },
+                      }}
+                    >
+                      <p>
+                        <BsMarkdownFill /> SQLite
+                      </p>
+                      <p>
+                        <BsMarkdownFill /> MySQL
+                      </p>
+                      <p>
+                        <BsMarkdownFill /> Postgresql
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              <div className={style.skill}>
+                <div
+                  onClick={(e) => setShowAdditionalTech(!showAdditionalTech)}
+                  className={style.dropdownSkill}
+                >
+                  <span>
+                    {showAdditionalTech ? (
+                      <FiChevronDown />
+                    ) : (
+                      <FiChevronRight />
+                    )}
+                  </span>
+                  <span style={{ color: "rgb(136,192,208)" }}>
+                    <BsFolderFill />
+                  </span>
+                  <span> Additional Technologies</span>
+                </div>
+                <AnimatePresence>
+                  {showAdditionalTech && (
+                    <motion.div
+                      className={style.showSkill}
+                      initial="hidden"
+                      animate="visible"
+                      exit="go"
+                      variants={{
+                        hidden: {
+                          y: "-20px",
+                          opacity: 0,
+                        },
+                        visible: {
+                          y: "0",
+                          opacity: 1,
+                          transition: {
+                            type: "spring",
+                            delay: 0.2,
+                            duration: 0.5,
+                          },
+                        },
+                        go: {
+                          y: "-20px",
+                          opacity: 0,
+                          transition: {
+                            type: "spring",
+                            delay: 0.2,
+                            duration: 0.3,
+                          },
+                        },
+                      }}
+                    >
+                      <p>
+                        <BsMarkdownFill /> Web3
+                      </p>
+                      <p>
+                        <BsMarkdownFill /> Crypto
+                      </p>
+                      <p>
+                        <BsMarkdownFill /> WebSocket
+                      </p>
+                      <p>
+                        <BsMarkdownFill /> PWA
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+              <div className={style.skill}>
+                <div
+                  onClick={(e) => setShowMethodologies(!showMethodologies)}
+                  className={style.dropdownSkill}
+                >
+                  <span>
+                    {showMethodologies ? <FiChevronDown /> : <FiChevronRight />}
+                  </span>
+                  <span style={{ color: "rgb(160, 102, 225)" }}>
+                    <BsFolderFill />
+                  </span>
+                  <span> Methodologies</span>
+                </div>
+                <AnimatePresence>
+                  {showMethodologies && (
+                    <motion.div
+                      className={style.showSkill}
+                      initial="hidden"
+                      animate="visible"
+                      exit="go"
+                      variants={{
+                        hidden: {
+                          y: "-20px",
+                          opacity: 0,
+                        },
+                        visible: {
+                          y: "0",
+                          opacity: 1,
+                          transition: {
+                            type: "spring",
+                            delay: 0.2,
+                            duration: 0.5,
+                          },
+                        },
+                        go: {
+                          y: "-20px",
+                          opacity: 0,
+                          transition: {
+                            type: "spring",
+                            delay: 0.2,
+                            duration: 0.3,
+                          },
+                        },
+                      }}
+                    >
+                      <p>
+                        <BsMarkdownFill /> Agile
+                      </p>
+                      <p>
+                        <BsMarkdownFill /> Scrum
+                      </p>
+                      <p>
+                        <BsMarkdownFill /> JIRA
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
               <div className={style.skill}>
                 <div
                   onClick={(e) => setShowFree(!showFree)}
@@ -387,103 +650,17 @@ const About = () => {
                         },
                       }}
                     >
-                      
                       <p>
-                        <BsMarkdownFill /> play video games.md
+                        <BsMarkdownFill /> Play video games
                       </p>
                       <p>
-                        <BsMarkdownFill /> hang out with friends.md
+                        <BsMarkdownFill /> Hang out with friends
                       </p>
                       <p>
-                        <BsMarkdownFill /> learn new things.md
+                        <BsMarkdownFill /> Learn new things
                       </p>
                       <p>
-                        <BsMarkdownFill /> building side project.md
-                      </p>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-              <div className={style.skill}>
-                <div
-                  onClick={(e) => setShowNext(!showNext)}
-                  className={style.dropdownSkill}
-                >
-                  <span>
-                    {showNext ? <FiChevronDown /> : <FiChevronRight />}
-                  </span>
-                  <span style={{ color: "rgb(136,192,208)" }}>
-                    <BsFolderFill />
-                  </span>
-                  <span> Others</span>
-                </div>
-                <AnimatePresence>
-                  {showNext && (
-                    <motion.div
-                      className={style.showSkill}
-                      initial="hidden"
-                      animate="visible"
-                      exit="go"
-                      variants={{
-                        hidden: {
-                          y: "-20px",
-                          opacity: 0,
-                        },
-                        visible: {
-                          y: "0",
-                          opacity: 1,
-                          transition: {
-                            type: "spring",
-                            delay: 0.2,
-                            duration: 0.5,
-                          },
-                        },
-                        go: {
-                          y: "-20px",
-                          opacity: 0,
-                          transition: {
-                            type: "spring",
-                            delay: 0.2,
-                            duration: 0.3,
-                          },
-                        },
-                      }}
-                    >
-                      <p>
-                        <BsMarkdownFill /> php.md
-                      </p>
-                      <p>
-                        <BsMarkdownFill /> MYSQL.md
-                      </p>
-                      <p>
-                        <BsMarkdownFill /> firebase.md
-                      </p>
-                      <p>
-                        <BsMarkdownFill /> laravel.md
-                      </p>
-                       <p>
-                        <BsMarkdownFill /> PWA.md
-                      </p>
-                      <p>
-                        <BsMarkdownFill /> wordpress.md
-                      </p>
-                      <p>
-                        <BsMarkdownFill /> woo commerce.md
-                      </p>
-                      <p>
-                        <BsMarkdownFill /> shopify.md
-                      </p>
-                      <p>
-                        <BsMarkdownFill /> figma.md
-                      </p>
-                      <p>
-                        <BsMarkdownFill /> git.md
-                      </p>
-                      <p>
-                        <BsMarkdownFill /> webpack.md
-                      </p>
-                      <p>
-                        <BsMarkdownFill /> restApi.md
+                        <BsMarkdownFill /> Building side project
                       </p>
                     </motion.div>
                   )}
