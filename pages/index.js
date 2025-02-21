@@ -51,7 +51,7 @@ export default function Home() {
               >
                 <p>Hello! I am</p>
                 <h1>Edafe Maxwell</h1>
-                <h3>senior front-end developer</h3>
+                <h3>Senior Front-end Engineer</h3>
               </motion.div>
             </AnimatePresence>
             <div className={styles.left_col_bottom}>
