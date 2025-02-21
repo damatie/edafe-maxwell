@@ -23,7 +23,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Edafe Maxwell::Portfolio</title>
-        <meta name="description" content="Senior Front-end Engineer" />
+        <meta name="description" content="senior front-end engineer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.body}>
