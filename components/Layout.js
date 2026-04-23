@@ -1,13 +1,16 @@
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Navbar from './Navbar';
+import Footer from './Footer';
+import ScrollProgress from './ScrollProgress';
 
 const Layout = ({ children }) => {
   return (
     <>
+      <a href="#main" className="skipLink">
+        Skip to main content
+      </a>
+      <ScrollProgress />
       <Navbar />
-
-      {children}
-
+      <main id="main">{children}</main>
       <Footer />
     </>
   );

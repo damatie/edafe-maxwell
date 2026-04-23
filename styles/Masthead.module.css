@@ -1,0 +1,124 @@
+.wrap {
+  min-height: calc(100vh - 64px);
+  padding-top: clamp(6rem, 14vh, 10rem);
+  padding-bottom: var(--space-16);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-8);
+  scroll-margin-top: var(--space-24);
+}
+
+.kickerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--ash);
+}
+
+.kicker {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: var(--step--1);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--ember);
+}
+
+.name {
+  margin: 0;
+  font-weight: 400;
+  line-height: 0.88;
+  letter-spacing: -0.035em;
+  color: var(--paper);
+  font-variation-settings: 'opsz' 144, 'SOFT' 60;
+  display: flex;
+  flex-direction: column;
+}
+
+.nameLine {
+  display: inline-block;
+  font-size: clamp(4rem, 16vw, 12rem);
+}
+
+.nameLine:nth-child(2) {
+  color: var(--ash);
+  font-style: italic;
+  font-variation-settings: 'opsz' 144, 'SOFT' 100;
+}
+
+.ampersand {
+  color: var(--ember);
+  font-style: normal;
+}
+
+.role {
+  margin-top: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: var(--step--1);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ash);
+}
+
+.roleRule {
+  display: inline-block;
+  width: clamp(1.5rem, 5vw, 3.5rem);
+  height: 1px;
+  background: var(--ember);
+}
+
+.lede {
+  max-width: 52ch;
+  font-size: var(--step-2);
+  line-height: 1.5;
+  color: var(--paper);
+}
+
+.cta {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-6);
+  border: 1px solid var(--rule-strong);
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: var(--step--1);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--paper);
+  transition: border-color var(--dur-sm) var(--ease-out),
+    background var(--dur-sm) var(--ease-out);
+}
+
+.cta:hover,
+.cta:focus-visible {
+  border-color: var(--ember);
+  background: rgba(200, 83, 58, 0.06);
+}
+
+.arrow {
+  color: var(--ember);
+  transition: transform var(--dur-sm) var(--ease-out);
+}
+
+.cta:hover .arrow {
+  transform: translateY(2px);
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    padding-top: 6rem;
+  }
+}

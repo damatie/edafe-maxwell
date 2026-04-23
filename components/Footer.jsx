@@ -1,46 +1,65 @@
-import style from "../styles/Footer.module.css";
-import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
-import Link from "next/link";
+import { useEffect, useState } from 'react';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
+import { site } from '../data/site';
+import styles from '../styles/Footer.module.css';
+
+const clockFormatter = new Intl.DateTimeFormat('en-GB', {
+  timeZone: site.timezone,
+  hour: '2-digit',
+  minute: '2-digit',
+  hour12: false,
+  timeZoneName: 'short',
+});
+
 const Footer = () => {
-  const current = new Date();
-  const date = `${current.getDate()}/${
-    current.getMonth() + 1
-  }/${current.getFullYear()}`;
-  const time = current.getHours() + ":" + current.getMinutes();
+  const [time, setTime] = useState(null);
+
+  useEffect(() => {
+    const tick = () => setTime(clockFormatter.format(new Date()));
+    tick();
+    const id = setInterval(tick, 15_000);
+    return () => clearInterval(id);
+  }, []);
+
+  const year = new Date().getFullYear();
+
   return (
-    <div className={style.footer}>
-      <div>
-        <p className={style.find}>find me in:</p>
-        <a
-          href="https://www.linkedin.com/in/edafe-maxwell/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span>
-            <BsLinkedin />
-          </span>
-        </a>
-        {/* <a
-          href="https://github.com/kasim393"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span>
-            <BsGithub />
-          </span>
-        </a> */}
-        {/* <a
-          href="https://twitter.com/cypherwebs"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span>
-            <BsTwitter />
-          </span>
-        </a> */}
+    <footer className={styles.footer}>
+      <div className={styles.col}>
+        <span className={styles.dot} aria-hidden="true" />
+        <span className={styles.label}>Manchester</span>
+        <span className={styles.sep} aria-hidden="true">
+          /
+        </span>
+        <time className={styles.time} suppressHydrationWarning>
+          {time ?? '--:--'}
+        </time>
       </div>
-      <div>{time + " | " + date}</div>
-    </div>
+
+      <div className={styles.col}>
+        <a
+          href={site.contact.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          className={styles.icon}
+        >
+          <BsLinkedin />
+        </a>
+        {site.contact.github && (
+          <a
+            href={site.contact.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className={styles.icon}
+          >
+            <BsGithub />
+          </a>
+        )}
+        <span className={styles.mark}>© {year} Edafe Maxwell</span>
+      </div>
+    </footer>
   );
 };
 
