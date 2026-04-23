@@ -6,6 +6,7 @@ export default function Document() {
       <Head>
         <meta name="theme-color" content="#0E0E0C" />
         <meta name="color-scheme" content="dark" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Head>
       <body>
         <Main />

@@ -52,7 +52,7 @@ export default function Home() {
         <meta name="twitter:description" content="Shipping user interfaces since 2018. Currently building Kweve and Knoledg, two AI products, solo." />
         <meta name="twitter:image" content={`${site.url}/api/og`} />
         <link rel="canonical" href={`${site.url}/`} />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Head>
 
       <div className={styles.page}>
